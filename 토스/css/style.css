@@ -15,9 +15,7 @@ span,p,h1,h2,h3,a{
 a{
   color:#666666;
 }
-#wrap{
-  width:100%;
-}
+
 
 /* 공통영역 */
 section .main-title{
@@ -365,7 +363,7 @@ section h2{
 
 /* 일곱째 섹션 */
 .section7-outer{
-  padding: 250px 0 165px 0;
+  padding: 250px 0 250px 0;
 }
 
 .section7-inner{
@@ -416,3 +414,46 @@ section h2{
 .section7-inner .popular-chart .chart{
   padding:0 8px;
 }
+
+.section7-inner .sub-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+
+.section7-inner .sub-title p{
+  color:#333d4b;
+  font-size: 21px;
+  text-align: center;
+}
+/* 일곱째 섹션 */
+
+/* 여덟째 섹션 */
+#section8{
+  padding: 0 0 250px 0;
+
+}
+
+.section8-inner{
+  position: relative;
+  height: 800px;
+  background: url(https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section8-inner h1{
+  position: absolute;
+  font-size: 93px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: #f9fafb;
+}
+/* 여덟째 섹션 */
+
+/* 아홉째 섹션 */
+
+
+/* 아홉째 섹션 */
