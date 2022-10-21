@@ -431,14 +431,13 @@ section h2{
   padding:0 8px;
 }
 
-<<<<<<< HEAD
 .section7-inner .bottom-title{
   padding: 140px 0 0 0;
   color: #333d4b;
   font-size: 18px;
   line-height: 28px;
   margin: 0 auto;
-=======
+}
 .section7-inner .sub-title{
   display: flex;
   justify-content: center;
@@ -448,26 +447,22 @@ section h2{
 .section7-inner .sub-title p{
   color:#333d4b;
   font-size: 21px;
->>>>>>> 69b32a7b210513a135d1f74df4ab8e804fc2a37f
   text-align: center;
 }
 /* 일곱째 섹션 */
 
 /* 여덟째 섹션 */
-<<<<<<< HEAD
 
 .section8-outer{
   padding: 50px 0 165px 0;
-=======
+}
 #section8{
   padding: 0 0 250px 0;
 
->>>>>>> 69b32a7b210513a135d1f74df4ab8e804fc2a37f
 }
 
 .section8-inner{
   position: relative;
-<<<<<<< HEAD
   width: 100%;
   height: 800px;
   background-image: url("/토스/img/section8-img1.jpg");
@@ -477,7 +472,6 @@ section h2{
 
 .section8-inner .main-title{
   position: absolute;
-=======
   height: 800px;
   background: url(https://static.toss.im/assets/homepage/newtossim/section2_4_big.jpg);
   background-position: center;
@@ -488,12 +482,10 @@ section h2{
 .section8-inner h1{
   position: absolute;
   font-size: 93px;
->>>>>>> 69b32a7b210513a135d1f74df4ab8e804fc2a37f
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
   color: #f9fafb;
-<<<<<<< HEAD
   font-size: 75px;
 }
 /* 여덟째 섹션 */
@@ -628,12 +620,10 @@ section h2{
   line-height: 24px;
 }
 /* 아홉째 섹션 */
-=======
-}
+
 /* 여덟째 섹션 */
 
 /* 아홉째 섹션 */
 
 
 /* 아홉째 섹션 */
->>>>>>> 69b32a7b210513a135d1f74df4ab8e804fc2a37f
