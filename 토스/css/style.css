@@ -121,7 +121,7 @@ section h2{
 .section1-box .down-button{
   display: flex;
 }
-
+    
 .section1-box .down-button a{
   border : 1px solid #666666;
   border-radius: 10px;
@@ -298,14 +298,20 @@ section h2{
   color:#333d4b
 }
 
-
-
-.section5-inner > span{
+.section5-inner > p{
   font-size: 38px;
   margin:10px 0;
 }
 
-.section5-inner >p{
+.section5-inner > p > span{
+  color:#8b95a1
+}
+
+.section5-inner > p:nth-of-type(3) > span {
+  color: #d1d6db;
+}
+
+.section5-inner > p:nth-of-type(4){
   margin:25px 0;
   font-size: 20px;
   line-height: 30px;
@@ -336,6 +342,11 @@ section h2{
   width: 92%;
   max-width: 1140px;
   margin:0 auto;
+}
+
+
+.section6-inner .main-title{
+  padding: 0;
 }
 
 .section6-inner .items{
@@ -369,23 +380,27 @@ section h2{
 }
 
 .section7-inner{
-  position: relative;
-  width: 100%;
-
-  margin:0 auto;
+  position: relative;  
+  margin:0 auto;  
+  width: 92%;
+  max-width: 1140px;  
 }
 
 .section7-inner .titles{
-  width:60%;
-  margin: 0 auto;
-  padding:350px 0 0 30px;
+  width:80%;
+  margin: 0 auto;  
+  padding:350px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
 .section7-inner .titles p{
   color:#333d4b;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.section7-inner .title1 p{
+  padding-left: 35px;
 }
 
 .section7-inner .items{
@@ -393,26 +408,193 @@ section h2{
   top:200px;
   left:50%;
   transform: translate(-50%,0);
-  z-index: 0;
+  
 }
+
 
 .section7-inner .items .item1-img{
   position: absolute;
   top:90px;
   left:50%;
   transform: translate(-50%,0);
-  z-index: -1;
+  
 }
 
 .section7-inner .popular-chart{
+  position: relative;
   width: 100%;
-  padding-top: 155px;
+  padding-top: 170px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-
+  justify-content: center;  
 }
 
 .section7-inner .popular-chart .chart{
   padding:0 8px;
 }
+
+.section7-inner .bottom-title{
+  padding: 140px 0 0 0;
+  color: #333d4b;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* 일곱째 섹션 */
+
+/* 여덟째 섹션 */
+
+.section8-outer{
+  padding: 50px 0 165px 0;
+}
+
+.section8-inner{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url("/토스/img/section8-img1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.section8-inner .main-title{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: #f9fafb;
+  font-size: 75px;
+}
+/* 여덟째 섹션 */
+
+
+/* 아홉째 섹션 */
+
+.section9-outer{
+  padding: 50px 0 165px 0;
+}
+
+.section9-inner{
+  margin:0 auto;  
+  width: 92%;
+  max-width: 1140px;  
+}
+
+.section9-inner .main-title{
+  padding-left: 60px;
+}
+
+.section9-inner .main-title h1{
+  color:#191f28;
+  font-size: 50px;
+}
+
+.section9-inner .item1 .img1{
+  text-align: center;
+  margin-top: 130px;
+}
+.section9-inner .item1 .img1 img{
+  object-fit: fill;
+  width:740px;
+  height:807px;
+}
+
+.section9-inner .item1 .titles{
+  padding-left: 60px;
+}
+
+.section9-inner .item1 .title1{
+  color:#191f28;
+  font-size: 33px;
+  margin: 50px 0 30px 0;
+}
+.section9-inner .item1 .title2{
+  color: #333d4b;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.section9-inner .item1 .title1 span{
+  color:#b0bbc1;
+}
+
+.section9-inner .item2{
+  margin-top: 250px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.section9-inner .item2 .item2-left img{
+  width:672px;
+  height:838px;
+  object-fit: fill;
+}
+
+.section9-inner .item2 .item2-left .titles{
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.section9-inner .item2 .item2-left .titles .title1{
+  color:#191f28;
+}
+
+.section9-inner .item2 .item2-left .titles .title2{
+  margin-top: 5px;
+  color:#b0b8c1;
+}
+
+.section9-inner .item2 .item2-right{
+  padding: 150px 0 0 30px;
+}
+
+.section9-inner .item2 .item2-right img{
+  width:336px;
+  height: 432px;
+}
+
+.section9-inner .item2 .item2-right .title{
+  margin-top:30px;
+  font-size: 17px;
+  color:#333d4b;
+}
+
+.section9-inner .item3{
+  margin-top:200px;
+  text-align: center;
+}
+
+.section9-inner .item3 .img1 img{
+  width:1048px;
+  height: 705px;
+  object-fit: fill;
+}
+
+.section9-inner .item3 .titles{
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 58px 0 45px;
+  text-align: left;
+  
+}
+
+.section9-inner .item3 .titles .title1{
+  font-size: 34px;
+}
+
+.section9-inner .item3 .titles .title1 p{
+  color: #191f28;
+}
+
+.section9-inner .item3 .titles .title1 span{
+  color: #b0bbc1;
+}
+
+.section9-inner .item3 .titles .title2{
+  color:#333d4b;
+  font-size: 17px;
+  line-height: 24px;
+}
+/* 아홉째 섹션 */
