@@ -533,7 +533,7 @@ section h2{
 .section9-inner .item2{
   margin-top: 250px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   
 }
 
@@ -558,7 +558,7 @@ section h2{
 }
 
 .section9-inner .item2 .item2-right{
-  padding: 150px 0 0 30px;
+  padding: 150px 0 0 0;
 }
 
 .section9-inner .item2 .item2-right img{
@@ -569,6 +569,7 @@ section h2{
 .section9-inner .item2 .item2-right .title{
   margin-top:30px;
   font-size: 17px;
+  line-height: 25px;
   color:#333d4b;
 }
 
