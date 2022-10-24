@@ -462,10 +462,12 @@ section h2{
   position: relative;
   width: 100%;
   height: 800px;
-  background-image: url("/img/section8-img1.jpg");
-  background-repeat: no-repeat;
+  background-image: url("/깃허브/Toss/토스/img/section8-img1.jpg");
+  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
+  background-color: rgba(0,0, 0, 0.5);
+  
 }
 
 .section8-inner .main-title{
@@ -611,9 +613,4 @@ section h2{
 }
 /* 아홉째 섹션 */
 
-/* 여덟째 섹션 */
 
-/* 아홉째 섹션 */
-
-
-/* 아홉째 섹션 */
