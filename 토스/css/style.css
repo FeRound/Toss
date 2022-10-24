@@ -462,7 +462,7 @@ section h2{
   position: relative;
   width: 100%;
   height: 800px;
-  background-image: url("/깃허브/Toss/토스/img/section8-img1.jpg");
+  background: url("/깃허브/Toss/토스/img/section8-img1.jpg") no-repeat;
   /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
