@@ -613,4 +613,142 @@ section h2{
 }
 /* 아홉째 섹션 */
 
+/* 열번째 섹션 */
+#section10{
+  padding: 200px 0 165px 0;
+  background-color: #f9fafb;
+}
+
+#section10 .inner{
+  margin:0 auto;
+  width: 92%;
+  max-width: 1140px;
+}
+
+#section10 .main-title{
+  padding-left: 0;
+}
+
+#section10 h2{
+  font-size: 26px;
+  color:#3182f6;
+}
+
+#section10 h3{
+  font-size: 50px;
+  color:#191f28;
+  margin-top: 20px;
+}
+
+#section10 .items{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#section10 .item{
+  margin-top: 120px;
+  width:calc(1140px / 2)
+}
+
+#section10 .item .title{
+  margin-top: 35px;
+}
+
+#section10 .item .title h4{
+  font-size: 20px;
+  color:#333d4b;
+}
+
+#section10 .item .title p{
+  font-size: 18px;
+  margin-top: 20px;
+  color:#8b95a1;
+}
+
+.box{
+  border-radius: 26px;
+  width:120px;
+  height: 120px;
+}
+.box1{
+  background-color: #ffe69b;
+}
+.box2{
+  background-color: #f2f4f6;
+}
+.box3{
+  background-color: #aeefd5;
+}
+.box4{
+  background-color: #edccf8;
+}
+.box5{
+  background-color: #f2f4f6;
+}
+.box6{
+  background-color: #e8f3ff;
+}
+.box7{
+  background-color: #aeefd5;
+}
+/* 열번째 섹션 */
+
+/* 열한번째 섹션 */
+#section11{
+  padding: 100px 0 165px 0;
+  background-color: #000000;
+}
+
+#section11 .inner{
+  margin:0 auto;
+  width: 92%;
+  max-width: 1140px;
+}
+
+#section11 .main-img img{
+  width: 100%;
+}
+
+#section11 .main-title{
+  text-align: center;
+}
+
+#section11 .main-title h2{
+  color:#ffffff;
+  font-size: 60px;
+}
+
+#section11 .main-title h3{
+  color:#b0b8c1;
+  font-size: 30px;
+  margin: 25px 0 200px 0;
+}
+
+#section11 .sub-title{
+  display: flex;
+}
+
+#section11 .sub-title .item{
+  padding-right: 100px;
+  
+}
+
+#section11 .sub-title h4{
+  color:#ffffff;
+  font-size: 30px;
+}
+
+#section11 .sub-title p{
+  color:#b0b8c1;
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+}
+
+#section11 .sub-title a{
+  color:#f9fafb;
+  background-color: #3182f6;
+  padding: 11px 16px;
+  border-radius: 7px;
+}
+/* 열한번째 섹션 */
 
