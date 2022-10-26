@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>토스</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="wrap">
-    
+  <div id="wrap">    
     <!-- 헤더 -->
     <div id="header">
       <div class="inner">
@@ -76,11 +79,10 @@
 
     <!-- 세번째 섹션 -->
     <section id="section3">
-      <div class="section3-outer">
-        <div class="section3-inner">
+        <div class="inner">
           <div class="main-title">
-            <h1>홈 . 소비</h1>
-            <h2>내 돈 관리,<br>지출부터 일정까지<br>똑똑하게</h2>
+            <h2>홈 · 소비</h2>
+            <h3>내 돈 관리,<br>지출부터 일정까지<br>똑똑하게</h3>
           </div>
           <div class="sub-title">
             <p>토스에 계좌와 카드를 연결해 보세요.<br>
@@ -90,63 +92,60 @@
           </div>
           <div class="item1">
             <div class="home">
-              <img src="./img/section1_1_home_01.png" alt="" width="315">
+              <img src="./img/section1_1_home_01.png" alt="">
             </div>
-            <div class="phone-case">
-              <img src="./img/iPhone12_Clay_Shadow.png" alt="" width="550">
+            <div class="iphone12">
+              <img src="./img/iPhone12_Clay_Shadow.png" alt="">
             </div>
           </div>
 
           <div class="item2">
             <div class="home">
-              <img src="./img/section1_1_home_02.png" alt="" width="315">
+              <img src="./img/section1_1_home_02.png" alt="">
             </div>
-            <div class="phone-case">
-              <img src="./img/iPhone12_Clay_Shadow.png" alt="" width="550">
+            <div class="iphone12">
+              <img src="./img/iPhone12_Clay_Shadow.png" alt="">
             </div>
           </div>
-
         </div>
-      </div>
+      
     </section>
     <!-- 세번째 섹션 -->
   
     <!-- 네번째 섹션 -->
     <section id="section4">
-      <div class="section4-outer">
-        <div class="section4-inner">
-          <div class="main-title">
-            <h1>송금</h1>
-            <h2>간편하고 안전하게<br>수수료는 평생 무료로,<br>이런 송금 써보셨나요?</h2>
+      <div class="inner">
+        <div class="main-title">
+          <h2>송금</h1>
+          <h3>간편하고 안전하게<br>수수료는 평생 무료로,<br>이런 송금 써보셨나요?</h2>
+        </div>
+        
+        <div class="item item1">
+          <div class="main-text">
+            <p class="text1">평생 무료 송금</p>
+            <p class="text2">토스 평생 무료송금으로<br>모두의 금융에 자유를</p>
+            <p class="text3">누구에게 보내든 은행 상관 없이,<br>이제 토스와 함께 수수료 걱정 없이 송금하세요.</p>
           </div>
-          
-          <div class="item item1">
-            <div class="main-text">
-              <p class="text1">평생 무료 송금</p>
-              <p class="text2">토스 평생 무료송금으로<br>모두의 금융에 자유를</p>
-              <p class="text3">누구에게 보내든 은행 상관 없이,<br>이제 토스와 함께 수수료 걱정 없이 송금하세요.</p>
-            </div>
-            <img src="./img/item1-img.png" alt="" width="35%">
+          <img src="./img/item1-img.png" alt="">
+        </div>
+        
+        <div class="item item2">  
+          <img src="./img/item2-img.png" alt="">
+          <div class="main-text">
+            <p class="text1">사기계좌 조회</p>
+            <p class="text2">송금 전 사기 내역 조회로<br>피해를 미리 방지할 수 있어요</p>   
+            <p class="text3">송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>상대방의 연락처 또는 계좌가 사기 계좌인지
+            조회해<br>안전하게 송금할 수 있어요.</p>           
           </div>
-          
-          <div class="item item2">  
-            <img src="./img/item2-img.png" alt="" width="35%">
-            <div class="main-text">
-              <p class="text1">사기계좌 조회</p>
-              <p class="text2">송금 전 사기 내역 조회로<br>피해를 미리 방지할 수 있어요</p>   
-              <p class="text3">송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>상대방의 연락처 또는 계좌가 사기 계좌인지
-              조회해<br>안전하게 송금할 수 있어요.</p>           
-            </div>
-          </div>
+        </div>
 
-          <div class="item item3">
-            <div class="main-text">
-              <p class="text1">자동이체 예약</p>
-              <p class="text2">은행 점검 시간,<br>기다릴 필요 없어요</p>
-              <p class="text3">은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>점검 시간이 끝나면 토스가 알아서 송금해드릴게요.</p>
-            </div>
-            <img src="./img/item3-img.png" alt="" width="35%">
+        <div class="item item3">
+          <div class="main-text">
+            <p class="text1">자동이체 예약</p>
+            <p class="text2">은행 점검 시간,<br>기다릴 필요 없어요</p>
+            <p class="text3">은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>점검 시간이 끝나면 토스가 알아서 송금해드릴게요.</p>
           </div>
+          <img src="./img/item3-img.png" alt="">
         </div>
       </div>
     </section>
