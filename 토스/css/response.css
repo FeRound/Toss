@@ -1,3 +1,10 @@
-@media screen {
-  
+
+
+@media screen and (max-width:639px){
+  #header .header-items{
+    display: none;
+  }
+  #header{
+    display: flex;
+  }
 }
