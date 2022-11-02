@@ -4,7 +4,7 @@
 *{margin:0;padding:0;text-decoration:none;list-style:none;box-sizing:border-box;font-family: 'Noto Sans KR', sans-serif;letter-spacing:-1.5px;line-height: 150%;}
 a,p,span{font-weight: 500;}
 #wraper{
-  
+ min-width: 1360px;
 }
 h1{
   font-size: 66px;
@@ -39,6 +39,10 @@ h3{
   max-width: 1140px;
   margin: 0 auto;  
 }
+.main-title{
+  padding-top: 100px;
+
+}
 
 /* 헤더 */
 #header{
@@ -46,6 +50,7 @@ h3{
   width: 100%;
   z-index: 100;
   background: #ffffff;
+  /* opacity: .1; */
 }
 
 #header.fixedOn{
@@ -109,10 +114,11 @@ h3{
   width: 100%;
   max-width: 100%;
   height: 500px;  
-  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%); 
 }
 
 #section1 .container{
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,8 +156,7 @@ h3{
 
 #section1 .scrolldown-button{
   position: absolute;
-  bottom: -420px;
-  
+  bottom: -70%;
 }
 /* 첫번째섹션 */
 
@@ -185,29 +190,35 @@ h3{
   height: 100%;
 }
 
-#section3 .sub-title{  
+#section3 .sub-title{  /*섹션3 이벤트*/
   font-size: 23px;
   line-height: 30px;
   color:#333d4b;
   position: absolute;
   right: 30px;
   bottom: 166px;  
+  transition: 2s;
 }
 
 
-#section3 .item1{
+#section3 .item1{  
   position: absolute;
   right: -104px;
   top:0;
   z-index: 0;
+  transition: 1s;
+  
 }
+
 
 #section3 .item2{
   position: absolute;
   left: -100px;
-  top: 350px;
+  top:350px;
   z-index: 0;
+  transition: 1.5s;
 }
+
 
 #section3 .item1 .home{
   position: absolute;
@@ -477,7 +488,7 @@ h3{
   position: relative;
   width: 100%;
   height: 800px;
-  background: url("/토스/img/section8-img1.jpg");
+  background: url("../img/section8-img1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;  
