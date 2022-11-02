@@ -40,8 +40,9 @@ h3{
   margin: 0 auto;  
 }
 .main-title{
-  padding-top: 100px;
-
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s;
 }
 
 /* 헤더 */
@@ -50,7 +51,11 @@ h3{
   width: 100%;
   z-index: 100;
   background: #ffffff;
-  /* opacity: .1; */
+  transition: 1s;
+  opacity: 0;
+}
+#header.active{
+  opacity: 1;
 }
 
 #header.fixedOn{
@@ -118,12 +123,16 @@ h3{
 }
 
 #section1 .container{
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 170px;  
+  opacity: 0;
+  transition: 1s;
+}
+#section1 .container.active{
+  opacity: 1;
 }
 
 
@@ -189,36 +198,57 @@ h3{
 #section3 .container{
   height: 100%;
 }
+#section3.active .main-title{
+  opacity: 1;
+  transform: translateY(0);
+}
 
-#section3 .sub-title{  /*섹션3 이벤트*/
+#section3 .sub-title{  
   font-size: 23px;
   line-height: 30px;
   color:#333d4b;
   position: absolute;
   right: 30px;
-  bottom: 166px;  
-  transition: 2s;
+  bottom: 166px; 
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: 1.5s;
+  opacity: 0;
 }
-
+#section3.active .sub-title{  
+  transform: translateY(0);
+  opacity: 1;
+}
 
 #section3 .item1{  
   position: absolute;
   right: -104px;
   top:0;
   z-index: 0;
-  transition: 1s;
-  
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: .5s;
+  opacity: 0;
 }
-
+#section3.active .item1{
+  transform: translateY(0);
+  opacity: 1;
+}  
 
 #section3 .item2{
   position: absolute;
   left: -100px;
   top:350px;
   z-index: 0;
-  transition: 1.5s;
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: 1s;
+  opacity: 0;
 }
-
+#section3.active .item2{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 #section3 .item1 .home{
   position: absolute;
@@ -248,9 +278,9 @@ h3{
   max-width: 1140px;
   margin:0 auto;
 }
-
-#section4 img{
-  width: 45%;
+#section4.active .main-title{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #section4 .item{
@@ -258,7 +288,27 @@ h3{
 }
 
 #section4 .item .main-text{
-  padding: 0 0 0 38px;
+  transform: translateY(50px);
+  padding-left:38px;
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 1s;
+}
+#section4.active .item .main-text{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#section4 img{
+  transform: translateY(50px);
+  width: 45%;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1.2s;
+}
+#section4.active img{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #section4 .item p{
@@ -316,17 +366,59 @@ h3{
 }
 
 #section5 .main-title{
+  padding-top:0;
   margin: 0 0 200px 0;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: .5s;
 }
+#section5.active .main-title{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 #section5 .main-title h2{
   margin-bottom: 20px
 }
+
 #section5 .sub-title{
   color:#333d4b
 }
 
 #section5 h4{
   font-size: 48px;
+}
+
+#section5 h4:nth-child(1){
+  transform: translateY(50px);
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 1.5s;
+}
+#section5.active h4:nth-child(1){
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#section5 h4:nth-child(2){
+  transform: translateY(50px);
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 2s;
+}
+#section5.active h4:nth-child(2){
+  transform: translateY(0);
+  opacity: 1;
+}
+#section5 h4:nth-child(3){
+  transform: translateY(50px);
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 2.5s;
+}
+#section5.active h4:nth-child(3){
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #section5 span{
@@ -336,9 +428,17 @@ h3{
   color:#d1d6db
 }
 
-#section5 p{
+#section5 .sub-title p{
   font-size: 23px;
   margin-top: 30px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 1s;
+}
+#section5.active .sub-title p{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #section5 .item1{
@@ -346,6 +446,14 @@ h3{
   top: -45px;
   right: -110px;
   z-index: 10;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: .5s;
+  transition-delay: .5s;
+}
+#section5.active .item1{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #section5 .home{
@@ -353,6 +461,10 @@ h3{
   right:130px;
   top:100px;
   z-index: -10;
+}
+
+#section5 .home img{
+  transition: 1.5s;
 }
 /* 다섯째 섹션 */
 
@@ -376,6 +488,11 @@ h3{
 #section6 .main-title{
   padding: 0;
   margin-bottom: 80px;
+  opacity: 0;
+}
+#section6.active .main-title{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #section6 .items{
@@ -388,15 +505,38 @@ h3{
   margin: 0 30px 150px 0;
 }
 
-#section6 h4{
-  font-size: 28px;
-  color:#333d4b
+#section6 .item-img{
+  transform: translateY(50px);
+  transition: 1s;
+  transition-delay: 1.2s;
+  opacity: 0;
+}
+#section6.active .item-img{
+  transform: translateY(0);
+  opacity: 1;
 }
 
-#section6 p{
+#section6 .title h4{
+  font-size: 28px;
+  color:#333d4b;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+#section6 .sub-title p{
   margin-top: 10px;
   font-size: 22px;
-  color:#6b7684
+  color:#6b7684;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+#section6.active .title h4, #section6.active .sub-title p{
+  transform: translateY(0);
+  opacity: 1;
 }
 /* 여섯째 섹션 */
 
@@ -412,6 +552,11 @@ h3{
   max-width: 1140px;  
 }
 
+#section7.active .main-title{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 #section7 .titles{  
   top: 46%;
   left: 9%;
@@ -419,6 +564,28 @@ h3{
   position: absolute;
   display: flex;
   justify-content: space-between;  
+}
+
+#section7 .title1{
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: 1s;
+  opacity: 0;
+}
+#section7.active .title1{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#section7 .title2{
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: 1.5s;
+  opacity: 0;
+}
+#section7.active .title2{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #section7 .titles p{
@@ -480,13 +647,22 @@ h3{
   font-size: 23px;
   text-align: center;
   margin: 0 auto;
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: 2s;
+  opacity: 0;
+}
+#section7.active .bottom-title{
+  transform: translateY(0);
+  opacity: 1;
 }
 /* 일곱째 섹션 */
 
 /* 여덟째 섹션 */
 #section8{
+  margin: 0 auto;
   position: relative;
-  width: 100%;
+  width: 72%;
   height: 800px;
   background: url("../img/section8-img1.jpg");
   background-repeat: no-repeat;
@@ -495,6 +671,8 @@ h3{
 }
 
 #section8 .main-title{
+  transform: translateY(0);
+  opacity: 1;
   position: absolute;
   font-size: 100px;
   top:50%;
@@ -642,6 +820,10 @@ h3{
 #section10 .main-title{
   margin-bottom: 100px;
 }
+#section10.active .main-title{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 #section10 h2{
   font-size: 26px;
@@ -657,6 +839,14 @@ h3{
 #section10 .items{
   display: flex;
   flex-wrap: wrap;
+  transform: translateY(50px);
+  transition: .5s;
+  transition-delay: 1s;
+  opacity: 0;
+}
+#section10.active .items{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #section10 .item{
@@ -725,10 +915,20 @@ h3{
 
 #section11 .main-img img{
   width: 100%;
+  transition: 1s;
+  opacity: 0;
+}
+#section11.active .main-img img{
+  opacity: 1;
 }
 
 #section11 .main-title{
   text-align: center;
+  transition-delay: 1s;
+}
+#section11.active .main-title{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #section11 .main-title h2{
@@ -744,6 +944,15 @@ h3{
 
 #section11 .sub-title{
   display: flex;
+  transform: translateY(100px);
+  transition: 1s;
+  transition-delay: 1.5s;
+  opacity: 0;
+}
+#section11.active .sub-title{
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #section11 .sub-title .item{
