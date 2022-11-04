@@ -38,6 +38,7 @@ h3{
   width: 92%;
   max-width: 1140px;
   margin: 0 auto;  
+
 }
 .main-title{
   transform: translateY(100px);
@@ -51,11 +52,7 @@ h3{
   width: 100%;
   z-index: 100;
   background: #ffffff;
-  transition: 1s;
   opacity: 0;
-}
-#header.active{
-  opacity: 1;
 }
 
 #header.fixedOn{
@@ -627,15 +624,18 @@ h3{
   width: 100%;
   top:70%;
   z-index: -5;
+  
 }
 
 #section7 .popular-chart .chart img{ 
   width:178px;
   height:178px;
+  
 }
 
 #section7 .popular-chart .chart{
   margin-right: 16px;
+  
 }
 
 #section7 .popular-chart .chart:last-child{
