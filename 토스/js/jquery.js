@@ -1,14 +1,13 @@
 $(function(){  
   setTimeout(section1EventOn,700);//메인배너 실행 함수
   $(window).on("scroll",windowScrollEvent) // 스크롤시 실행 함수
-  $()
   HomeSliderOn() // 섹션5 슬라이드 함수
 })
 
 function HomeSliderOn(){ 
     let number = 1;    
     setInterval(function(){     
-      $("#section5 .home img").attr("src",`./img/section5-img${number}.png`)
+      
       number++;
       if(number == 4){
         number = 1;

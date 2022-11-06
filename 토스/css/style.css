@@ -4,7 +4,7 @@
 *{margin:0;padding:0;text-decoration:none;list-style:none;box-sizing:border-box;font-family: 'Noto Sans KR', sans-serif;letter-spacing:-1.5px;line-height: 150%;}
 a,p,span{font-weight: 500;}
 #wraper{
- min-width: 1360px;
+ /* min-width: 1360px; */
 }
 h1{
   font-size: 66px;
@@ -29,6 +29,9 @@ h3{
   width: 342px;
   height: 740px;  
 }
+section{
+  
+}
 .container{
   width: 92%;
   margin:0 auto;
@@ -38,7 +41,7 @@ h3{
   width: 92%;
   max-width: 1140px;
   margin: 0 auto;  
-
+  overflow: hidden;
 }
 .main-title{
   transform: translateY(100px);
@@ -52,7 +55,6 @@ h3{
   width: 100%;
   z-index: 100;
   background: #ffffff;
-  opacity: 0;
 }
 
 #header.fixedOn{
@@ -182,7 +184,8 @@ h3{
 /* 세번째 섹션 */
 #section3{
   padding: 250px 0 165px 0;
-  background: #ffffff
+  background: #ffffff;
+  overflow: hidden;
 }
 
 #section3 .inner{  
@@ -190,6 +193,7 @@ h3{
   width: 92%;
   max-width: 1140px;
   height: 1272px;
+  overflow: visible;
 }
 
 #section3 .container{
@@ -351,10 +355,11 @@ h3{
 #section5{
   padding: 250px 0 250px 0;
   background-color: #ffffff;  
+  overflow: hidden;
 }
 
 #section5 .inner{
-  
+  overflow: visible;
   width: 92%;
   max-width: 1140px;
   margin:0 auto;
@@ -540,6 +545,7 @@ h3{
 /* 일곱째 섹션 */
 #section7{
   padding: 250px 0 250px 0;
+  overflow: hidden;
 }
 
 #section7 .inner{
@@ -547,6 +553,7 @@ h3{
   margin:0 auto;  
   width: 92%;
   max-width: 1140px;  
+  overflow: visible;
 }
 
 #section7.active .main-title{
