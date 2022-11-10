@@ -28,13 +28,9 @@ function windowScrollEvent(){
   let section7Height = $("#section8").offset().top - $("#section7").offset().top // 섹션7 높이
   let section7Offset = $("#section7").offset().top // 섹션7 위치
   let section8Offset = $("#section8").offset().top // 섹션8 위치
-
   console.log(`현재스크롤높이:${NowHeight}`) 
- 
-  
-
-
-  if(NowHeight > 0){ //헤더 보더바텀 추가
+   
+  if(NowHeight > 0){ //헤더 border-bottom 추가
     $("#header").addClass("fixedOn")
   }else{
     $("#header").removeClass("fixedOn")
@@ -42,18 +38,32 @@ function windowScrollEvent(){
 
   $("section").each(function(index,e){ // 특정 높이에 도달하면 active 클래스 추가
     console.log(`${index + 1}번 섹션 : ${$(this).offset().top}`)
-    if(($(this).offset().top - 600) < NowHeight){     
+    if(($(this).offset().top - (wHeight * 1)) < NowHeight){     
       $(this).addClass("active");
     }  
   })
-
-
-
-  if(section7Offset <= NowHeight && section8Offset >= NowHeight){ // 섹션7 구역 안으로 스크롤 들어왔을때 작동
-    let percent = (NowHeight  / (section7Height - wHeight)) * 100;
-    console.log(percent);
+  
+  //섹션 7 이벤트
+  let section7Op1Start = section7Offset + (wHeight * 0.35);
+  let section7Op1End = section7Offset + (wHeight * 0.45);
+  if(section7Op1Start <= NowHeight && section7Op1End >= NowHeight){
+    let section7Op1 = ((NowHeight - section7Op1Start) / (section7Op1End - section7Op1Start) * 100);
+    $("#section7 .chart-opacity1").css("opacity",`${section7Op1}%`)
+    console.log($("#section7 .chart-opacity1"))
   }
 
+
+  // 섹션8 이벤트
+  let section8EventStart = section8Offset - (wHeight * 0.8);
+  let section8EventEnd = section8Offset + (wHeight * 0.2);
+  if(section8EventStart <= NowHeight && section8EventEnd >= NowHeight){
+    let section8Width = ((NowHeight - section8EventStart) / (section8EventEnd - section8EventStart) * 100);
+    $("#section8 .item1").css("transform",`translateX(-${section8Width}%)`)
+    $("#section8 .item2").css("transform",`translateX(${section8Width}%)`)
+  }
+
+
+  
 
   
 

@@ -631,18 +631,18 @@ section{
   width: 100%;
   top:70%;
   z-index: -5;
-  
 }
 
+#section7 .chart-opacity1{
+  opacity: 0;
+}
 #section7 .popular-chart .chart img{ 
   width:178px;
   height:178px;
-  
 }
 
 #section7 .popular-chart .chart{
   margin-right: 16px;
-  
 }
 
 #section7 .popular-chart .chart:last-child{
@@ -669,12 +669,12 @@ section{
 #section8{
   margin: 0 auto;
   position: relative;
-  width: 72%;
   height: 800px;
   background: url("../img/section8-img1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;  
+  overflow: hidden;
 }
 
 #section8 .main-title{
@@ -687,6 +687,21 @@ section{
   transform: translate(-50%,-50%);
   color: #f9fafb;  
 }
+
+#section8 .items{
+  position: absolute;
+  top: 0;
+  width: calc((100vw - 860px) / 2);
+  height: 100%;
+  background-color: #ffffff;
+}
+#section8 .item1{
+  left: 0; 
+}    
+#section8 .item2{
+  right: 0;
+}    
+
 /* 여덟째 섹션 */
 
 /* 아홉째 섹션 */
