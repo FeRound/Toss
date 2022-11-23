@@ -50,6 +50,7 @@ function windowScrollEvent(){
     $("#section7 .chart-opacity1").css("opacity",`${section7Op1}%`)
     console.log($("#section7 .chart-opacity1"))
   }
+
   let section7Op2Start = section7Offset + (wHeight * 0.55);
   let section7Op2End = section7Offset + (wHeight * 0.65);
   if(section7Op2Start <= NowHeight + 100 && section7Op2End >= NowHeight - 100){
@@ -66,8 +67,6 @@ function windowScrollEvent(){
     console.log($("#section7 .chart-opacity3"))
   }
 
-
-
   // 섹션8 이벤트
   let section8EventStart = section8Offset - (wHeight * 0.8);
   let section8EventEnd = section8Offset + (wHeight * 0.2);
@@ -77,12 +76,6 @@ function windowScrollEvent(){
     $("#section8 .item2").css("transform",`translateX(${section8Width}%)`)
     console.log(section8Width)
   }
-
-
-  
-
-  
-
 }
 
 
