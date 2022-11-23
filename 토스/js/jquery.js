@@ -6,8 +6,7 @@ $(function(){
 
 function HomeSliderOn(){ 
     let number = 1;    
-    setInterval(function(){     
-      
+    setInterval(function(){           
       number++;
       if(number == 4){
         number = 1;
