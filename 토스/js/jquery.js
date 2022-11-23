@@ -45,20 +45,37 @@ function windowScrollEvent(){
   //섹션 7 이벤트
   let section7Op1Start = section7Offset + (wHeight * 0.35);
   let section7Op1End = section7Offset + (wHeight * 0.45);
-  if(section7Op1Start <= NowHeight && section7Op1End >= NowHeight){
+  if(section7Op1Start <= NowHeight + 100 && section7Op1End >= NowHeight - 100){
     let section7Op1 = ((NowHeight - section7Op1Start) / (section7Op1End - section7Op1Start) * 100);
     $("#section7 .chart-opacity1").css("opacity",`${section7Op1}%`)
     console.log($("#section7 .chart-opacity1"))
   }
+  let section7Op2Start = section7Offset + (wHeight * 0.55);
+  let section7Op2End = section7Offset + (wHeight * 0.65);
+  if(section7Op2Start <= NowHeight + 100 && section7Op2End >= NowHeight - 100){
+    let section7Op2 = ((NowHeight - section7Op2Start) / (section7Op2End - section7Op2Start) * 100);
+    $("#section7 .chart-opacity2").css("opacity",`${section7Op2}%`)
+    console.log($("#section7 .chart-opacity2"))
+  }
+
+  let section7Op3Start = section7Offset + (wHeight * 0.75);
+  let section7Op3End = section7Offset + (wHeight * 0.85);
+  if(section7Op3Start <= NowHeight + 100 && section7Op3End >= NowHeight - 100){
+    let section7Op3 = ((NowHeight - section7Op3Start) / (section7Op3End - section7Op3Start) * 100);
+    $("#section7 .chart-opacity3").css("opacity",`${section7Op3}%`)
+    console.log($("#section7 .chart-opacity3"))
+  }
+
 
 
   // 섹션8 이벤트
   let section8EventStart = section8Offset - (wHeight * 0.8);
   let section8EventEnd = section8Offset + (wHeight * 0.2);
-  if(section8EventStart <= NowHeight && section8EventEnd >= NowHeight){
+  if(section8EventStart <= NowHeight && section8EventEnd >= NowHeight - 50){
     let section8Width = ((NowHeight - section8EventStart) / (section8EventEnd - section8EventStart) * 100);
     $("#section8 .item1").css("transform",`translateX(-${section8Width}%)`)
     $("#section8 .item2").css("transform",`translateX(${section8Width}%)`)
+    console.log(section8Width)
   }
 
 
